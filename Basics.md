@@ -21,12 +21,12 @@
   <li>The third category is files under your git directory that will not be save to git such as work and build directories or .tmp or .swp files.</li>
 </ol>
 <p>
-  ![alt tag](https://raw.githubusercontent.com/NyckJohnson/HowToGit/master/imgs/status.png")
+  ![alt tag](https://raw.githubusercontent.com/NyckJohnson/HowToGit/master/imgs/status.png)
 </p>
 <h3>git add &lt;file&gt;</h3>
 <p>If there are any files in the third category (those not being saved) which you want to add to git, this will add them.  Be careful however because if you designate a directory it will include all subfiles, you may not want all of them.  Best to run git status again after doing this.</p>
 <p>
-  ![alt tag](https://raw.githubusercontent.com/NyckJohnson/HowToGit/master/imgs/add.png")
+  ![alt tag](https://raw.githubusercontent.com/NyckJohnson/HowToGit/master/imgs/add.png)
 </p>
 <h3>git checkout -- &lt;file&gt;</h3>
 <p>This will revert a file to its last committed version.  If you do not want to save the changes that where made to it.</p>
