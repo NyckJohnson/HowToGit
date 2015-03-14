@@ -1,2 +1,2 @@
 # HowToGit
-Beginners Guide To Git
+A Beginners Guide To Git
