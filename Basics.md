@@ -33,7 +33,7 @@
 <h3>git rm --cached &lt;file&gt;</h3>
 <p>If there are files in the second category you do not want to save in git you can remove them from git with this command.</p>
 <p>
-  <img src="https://raw.githubusercontent.com/NyckJohnson/HowToGit/master/imgs/cached.png/>
+  <img src="https://raw.githubusercontent.com/NyckJohnson/HowToGit/master/imgs/rm.png"/>
 </p>
 <p>The "–cached" is important, it means that you are removing the file from git but not from your hard drive.  You are moving it to the untracked files list.  Without "–cached" this command will delete the file from your harddrive.</p>
 <p>This can also be used to remove files that are already saved to git but you no longer want to track.</p>
