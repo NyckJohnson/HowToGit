@@ -21,19 +21,19 @@
   <li>The third category is files under your git directory that will not be save to git such as work and build directories or .tmp or .swp files.</li>
 </ol>
 <p>
-  ![alt tag](https://raw.github.com/username/projectname/branch/path/to/status.png")
+  ![alt tag](https://raw.githubusercontent.com/NyckJohnson/HowToGit/master/imgs/status.png")
 </p>
 <h3>git add &lt;file&gt;</h3>
 <p>If there are any files in the third category (those not being saved) which you want to add to git, this will add them.  Be careful however because if you designate a directory it will include all subfiles, you may not want all of them.  Best to run git status again after doing this.</p>
 <p>
-  ![alt tag](https://raw.github.com/username/projectname/branch/path/to/add.png")
+  ![alt tag](https://raw.githubusercontent.com/NyckJohnson/HowToGit/master/imgs/add.png")
 </p>
 <h3>git checkout -- &lt;file&gt;</h3>
 <p>This will revert a file to its last committed version.  If you do not want to save the changes that where made to it.</p>
 <h3>git rm --cached &lt;file&gt;</h3>
 <p>If there are files in the second category you do not want to save in git you can remove them from git with this command.</p>
 <p>
-  ![alt tag](https://raw.github.com/username/projectname/branch/path/to/cached.png)
+  ![alt tag](https://raw.githubusercontent.com/NyckJohnson/HowToGit/master/imgs/cached.png)
 </p>
 <p>The "–cached" is important, it means that you are removing the file from git but not from your hard drive.  You are moving it to the untracked files list.  Without "–cached" this command will delete the file from your harddrive.</p>
 <p>This can also be used to remove files that are already saved to git but you no longer want to track.</p>
@@ -45,7 +45,7 @@
   <li>The -m flag includes the message which describes what the changes are.  Using git without this opens your preferred text editor automatically to take that message which can sometimes lead to problems.</li>
 </ol>
 <p>
-  ![alt tag](https://raw.github.com/username/projectname/branch/path/to/commit.png)
+  ![alt tag](https://raw.githubusercontent.com/NyckJohnson/HowToGit/master/imgs/commit.png)
 </p>
 <h2>3: Pushing</h2>
 <p>Once you have commits saved to the your local version of git and are ready to share your changes you need to push them to the Solution Teams origin copy of git.</p>
@@ -59,14 +59,14 @@
 <h3>git pull --rebase</h3>
 <p> git pull takes grabs the teams master copy with whatever changes the rest of the team has made and copies it to your local git, then it takes your changes and adds them in.</p>
 <p>
-  ![alt tag](https://raw.github.com/username/projectname/branch/path/to/pull.png)
+  ![alt tag](https://raw.githubusercontent.com/NyckJohnson/HowToGit/master/imgs/pull.png)
 </p>
 <p>the --rebase makes it so that if anyone goes through and reads log of changes it will appear much cleaner for them.</p>
 <h3>git mergetool</h3>
 <p>This is covered in part 4 "Merge Conflicts".</p>
 <h3>git push</h3>
 <p>
-  ![alt tag](https://raw.github.com/username/projectname/branch/path/to/push.png)
+  ![alt tag](https://raw.githubusercontent.com/NyckJohnson/HowToGit/master/imgs/push.png)
 </p>
 <p>Git push, this takes your local version of git and copies it to the teams master, where we all can get it.</p>
 <p>Our build server pulls this every day before running its test and then pushes it to vault so within 24hrs your changes should be pushed.</p>
